@@ -7,13 +7,15 @@ SQL Challenge
 # Results
 
 Data Modelling: see the following files under ./EmployeeSQL/01_DataModelling/
-- **ERD-QuickDBD-export.svg** (image file of Entity Relationship Diagram)
+- **ERD-QuickDBD-export.svg** (image file of Entity Relationship Diagram) and/or see embedded image below.
 
 Data Engineering: see the following files under ./EmployeeSQL/02_DataEngineering/
 - **CreateSchema.sql** (tables & relationships schemata)
 
 Data Analysis: see the following files under ./EmployeeSQL/03_DataAnalysis/
 - TBA
+
+<img src=./EmployeeSQL/01_DataModelling/ERD-QuickDBD-export.png>
 
 # Implementation notes
 
