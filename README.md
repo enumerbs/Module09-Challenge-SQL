@@ -7,10 +7,10 @@ SQL Challenge
 # Results
 
 Data Modelling: see the following files under ./EmployeeSQL/01_DataModelling/
-- ERD-QuickDBD-export.svg (image file of Entity Relationship Diagram)
+- **ERD-QuickDBD-export.svg** (image file of Entity Relationship Diagram)
 
 Data Engineering: see the following files under ./EmployeeSQL/02_DataEngineering/
-- TBA
+- **CreateSchema.sql** (tables & relationships schemata)
 
 Data Analysis: see the following files under ./EmployeeSQL/03_DataAnalysis/
 - TBA
@@ -23,7 +23,12 @@ Data Modelling:
 - Schema creation script in Postgres syntax for the tables & relationships defined, exported from QuickDBD, is saved in 'QuickDBD-export-schema-creation.sql'.
 
 Data Engineering:
-- TBA
+- 'PewlettHackard' database created using pgAdmin4
+- Database creation script saved as 'CreateDatabase.sql'
+- QuickDBD-generated Postgres tables & relationships script (see previous section) was modified to remove double-quote characters around table and field names, then saved to 'CreateSchema.sql' and run to create the tables and relationships for the database.
+- Tables were populated from their respective CSV files, using the Import/Export tool in pgAdmin.
+    - In the case of the Employees data, an intermediate table was used temporarily to assist with conversion of USA-format date text values to actual date type values. See 'ImportData_Employees.sql' for details.
+- Tables load order and basic QA checks (table record counts, and inspection of data read into some rows) is detailed in 'QA_Check_TablesLoadOrderAndRecordCounts.txt'.
 
 Data Analysis:
 - TBA
@@ -32,5 +37,8 @@ Data Analysis:
 
 The following references were used in the development of the solution for this Challenge.
 
-## Topic TBA
-- reference TBA
+## QuickDBD
+- QuickDBD documentation ('Docs' menu within the tool)
+
+## PostgreSQL
+- Postgres SQL Language documentation ( https://www.postgresql.org/docs/current/sql.html )
