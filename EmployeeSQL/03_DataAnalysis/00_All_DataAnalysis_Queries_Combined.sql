@@ -86,3 +86,33 @@ SELECT
  INNER JOIN Departments as d on d.dept_no = de.dept_no
  WHERE d.dept_name = 'Sales'
 ;
+
+-- Data Analysis (7)
+-- List each employee in the Sales and Development departments, including their employee number, last name, first name, and
+-- department name
+
+SELECT
+		e.emp_no,
+		e.last_name,
+		e.first_name,
+
+		d.dept_name
+
+  FROM Employees as e
+ INNER JOIN dept_emp as de on de.emp_no = e.emp_no
+ INNER JOIN Departments as d on d.dept_no = de.dept_no
+ WHERE d.dept_name in ('Sales', 'Development')
+;
+
+-- Data Analysis (8)
+-- List the frequency counts, in descending order, of all the employee last names (that is, how many employees share each
+-- last name)
+
+SELECT
+		e.last_name,
+		COUNT(e.last_name) as frequency_count
+  FROM Employees as e
+ GROUP BY e.last_name
+ ORDER BY frequency_count DESC,
+		e.last_name ASC
+;

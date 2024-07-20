@@ -40,6 +40,8 @@ Data Analysis:
 - 04_EmployeeDepartmentDetails.sql
 - 05_EmployeesNamedHerculesB.sql
 - 06_EmployeesInSalesDepartment.sql
+- 07_EmployeesInSalesOrDevelopmentDepartments.sql
+- 08_FrequencyCountsOfEmployeeLastNames.sql
 
 # References
 
