@@ -60,3 +60,29 @@ SELECT
  INNER JOIN dept_emp as de on de.dept_no = d.dept_no
  INNER JOIN Employees as e on e.emp_no = de.emp_no
 ;
+
+-- Data Analysis (5)
+-- List first name, last name, and sex of each employee whose first name is Hercules and
+-- whose last name begins with the letter B
+
+SELECT
+	   	e.first_name,
+		e.last_name,
+		e.sex
+  FROM Employees as e
+ WHERE e.first_name = 'Hercules' and e.last_name like 'B%'
+;
+
+-- Data Analysis (6)
+-- List each employee in the Sales department, including their employee number, last name, and first name
+
+SELECT
+		e.emp_no,
+		e.last_name,
+		e.first_name
+
+  FROM Employees as e
+ INNER JOIN dept_emp as de on de.emp_no = e.emp_no
+ INNER JOIN Departments as d on d.dept_no = de.dept_no
+ WHERE d.dept_name = 'Sales'
+;

@@ -38,6 +38,8 @@ Data Analysis:
 - 02_EmployeesHiredIn1986.sql
 - 03_ManagerOfEachDepartment.sql
 - 04_EmployeeDepartmentDetails.sql
+- 05_EmployeesNamedHerculesB.sql
+- 06_EmployeesInSalesDepartment.sql
 
 # References
 
