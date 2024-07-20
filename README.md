@@ -13,7 +13,7 @@ Data Engineering: see the following files under ./EmployeeSQL/02_DataEngineering
 - **CreateSchema.sql** (tables & relationships schemata)
 
 Data Analysis: see the following files under ./EmployeeSQL/03_DataAnalysis/
-- TBA
+- **00_All_DataAnalysis_Queries_Combined.sql** for all the queries combined into one file, or see the individual files for each query numbered 1-8.
 
 <img src=./EmployeeSQL/01_DataModelling/ERD-QuickDBD-export.png>
 
@@ -33,7 +33,9 @@ Data Engineering:
 - Tables load order and basic QA checks (table record counts, and inspection of data read into some rows) is detailed in 'QA_Check_TablesLoadOrderAndRecordCounts.txt'.
 
 Data Analysis:
-- TBA
+- 00_All_DataAnalysis_Queries_Combined.sql
+- 01_EmployeeDetailsIncludingSalary.sql
+- 02_EmployeesHiredIn1986.sql
 
 # References
 
