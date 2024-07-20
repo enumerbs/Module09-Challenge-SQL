@@ -1,0 +1,40 @@
+Titles
+# Reference data about employee Titles
+--
+title_id char(5) PK
+title varchar(30)
+
+Departments
+# Reference data about company Departments
+--
+dept_no char(4) PK
+dept_name varchar(20)
+
+Salaries
+# Entity table holding salary information per-Employee
+--
+emp_no int PK FK - Employees.emp_no
+salary money
+
+Employees
+# Entity table holding Employee details
+--
+emp_no int PK
+emp_title_id char(5) FK >- Titles.title_id
+birth_date date
+first_name varchar(50)
+last_name varchar(50)
+sex char(1)
+hire_date date
+
+dept_manager
+# Junction table for Department-Employee (manager) relationship
+--
+dept_no char(4) PK FK >- Departments.dept_no
+emp_no int PK FK >- Employees.emp_no
+
+dept_emp
+# Junction table for Department-Employee (non-manager) relationship
+--
+emp_no int PK FK >- Employees.emp_no
+dept_no char(4) PK FK >- Departments.dept_no
