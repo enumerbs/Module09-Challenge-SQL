@@ -36,6 +36,8 @@ Data Analysis:
 - 00_All_DataAnalysis_Queries_Combined.sql
 - 01_EmployeeDetailsIncludingSalary.sql
 - 02_EmployeesHiredIn1986.sql
+- 03_ManagerOfEachDepartment.sql
+- 04_EmployeeDepartmentDetails.sql
 
 # References
 
